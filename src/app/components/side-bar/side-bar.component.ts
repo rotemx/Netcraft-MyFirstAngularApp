@@ -6,7 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./side-bar.component.css']
 })
 export class SideBarComponent implements OnInit {
-
+  redirect(text:string){
+    window.location.href=`http://localhost:58496/text${text}`
+  }
   constructor() { }
 
   ngOnInit(): void {
