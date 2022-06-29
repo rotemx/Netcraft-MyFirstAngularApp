@@ -1,1 +1,13 @@
 <router-outlet></router-outlet>
+<div style="padding: 40px">
+	parent
+	<HR>
+	counter: {{counter}}
+	
+	<br>
+	<input type="button" value="+" (click)="counter = counter + 1">
+	
+	<hr>
+</div>
+
+<app-child [count]="counter"></app-child>

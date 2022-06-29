@@ -9,6 +9,10 @@ export class AComponent implements OnInit {
 
   constructor() { }
 
+  title = "Hello";
+  
+  counter:number = 0;
+  
   ngOnInit(): void {
   }
 

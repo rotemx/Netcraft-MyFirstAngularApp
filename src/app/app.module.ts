@@ -10,6 +10,10 @@ import {HeaderComponent} from './components/header/header.component';
 import {FooterComponent} from './components/footer/footer.component';
 import { AComponent } from './components/a/a.component';
 import { BComponent } from './components/b/b.component';
+import { AaComponent } from './components/aa/aa.component';
+import { ChildComponent } from './components/child/child.component';
+import { ParentComponent } from './components/parent/parent.component';
+import { DefaultContentComponent } from './components/default-content/default-content.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +23,11 @@ import { BComponent } from './components/b/b.component';
     HeaderComponent,
     FooterComponent,
     AComponent,
-    BComponent
+    BComponent,
+    AaComponent,
+    ChildComponent,
+    ParentComponent,
+    DefaultContentComponent,
   ],
   imports: [
     BrowserModule,
