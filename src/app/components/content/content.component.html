@@ -1,13 +1,22 @@
 <router-outlet></router-outlet>
+
 <div style="padding: 40px">
 	parent
 	<HR>
 	counter: {{counter}}
-	
+	<br>
+	status: {{status || 'nothing' }}
 	<br>
 	<input type="button" value="+" (click)="counter = counter + 1">
 	
 	<hr>
 </div>
 
-<app-child [count]="counter"></app-child>
+
+<app-child [count]="counter" (boomClicked)="onBoomClicked()" ></app-child>
+
+
+
+<input [(ngModel)]="myName" >
+
+<input type="button" value="set name" (click)="myName = 'Slim Shady'">

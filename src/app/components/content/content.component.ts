@@ -7,11 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContentComponent implements OnInit {
 
+  status:string = ""
   counter:number = 0;
+  
+  
+  myName:string = '';
   
   constructor() { }
 
   ngOnInit(): void {
   }
-
+  
+  onBoomClicked() {
+    console.log('boom');
+    this.status = "boom!"
+  }
+  
 }
