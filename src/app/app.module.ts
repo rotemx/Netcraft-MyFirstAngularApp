@@ -1,13 +1,15 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
-import {FormsModule}        from "@angular/forms";
-import { LayoutComponent } from './components/layout/layout.component';
-import { SideBarComponent } from './components/side-bar/side-bar.component';
-import { ContentComponent } from './components/content/content.component';
-import { HeaderComponent } from './components/header/header.component';
-import { FooterComponent } from './components/footer/footer.component';
+import {AppRoutingModule} from './app-routing.module';
+import {FormsModule} from "@angular/forms";
+import {LayoutComponent} from './components/layout/layout.component';
+import {SideBarComponent} from './components/side-bar/side-bar.component';
+import {ContentComponent} from './components/content/content.component';
+import {HeaderComponent} from './components/header/header.component';
+import {FooterComponent} from './components/footer/footer.component';
+import { AComponent } from './components/a/a.component';
+import { BComponent } from './components/b/b.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { FooterComponent } from './components/footer/footer.component';
     SideBarComponent,
     ContentComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    AComponent,
+    BComponent
   ],
   imports: [
     BrowserModule,
