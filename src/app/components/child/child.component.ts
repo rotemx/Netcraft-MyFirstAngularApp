@@ -10,11 +10,16 @@ export class ChildComponent implements OnInit {
   @Input() count:number;
   @Output() boomClicked = new EventEmitter();
   
+  fruit:string = 'banana';
+  
   constructor() { }
 
   ngOnInit(): void {
   
   }
 
+  onClick() {
+  
+  }
   
 }
